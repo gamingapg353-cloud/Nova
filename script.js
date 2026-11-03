@@ -44,6 +44,11 @@ document.querySelectorAll('section[id], footer[id]').forEach(s => sectionObserve
 // Joriy yil
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Ilova sifatida o'rnatish (PWA) uchun service worker
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  navigator.serviceWorker.register('/sw.js').catch(() => {});
+}
+
 // ---------- Google orqali kirish ----------
 // Google Cloud Console'dan olingan OAuth Client ID ni shu yerga qo'ying
 const GOOGLE_CLIENT_ID = '718318152423-qicrj78q4g8mqhbv02rl0b6mbtjitvco.apps.googleusercontent.com';

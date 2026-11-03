@@ -426,6 +426,16 @@ body.locked .nav > a { display: none; }
 .modal__note code { color: var(--accent); }
 .modal__terms { font-size: 12px; color: #8B8B94; }
 
+/* ---------- Maxfiylik siyosati sahifasi ---------- */
+.legal { max-width: 760px; padding-top: 56px; padding-bottom: 80px; line-height: 1.7; color: var(--muted); }
+.legal h1 { font-family: var(--font-display); font-size: clamp(30px, 5vw, 44px); letter-spacing: -0.02em; color: var(--text); }
+.legal h2 { margin-top: 36px; font-size: 20px; color: var(--text); }
+.legal p, .legal ul { margin: 12px 0 0; }
+.legal a { color: var(--accent); }
+.legal strong { color: var(--text); }
+.legal__date { font-size: 14px; }
+.legal hr { margin: 56px 0; border: 0; border-top: 1px solid var(--border); }
+
 /* ---------- Scroll animatsiyasi ---------- */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.visible { opacity: 1; transform: none; }
