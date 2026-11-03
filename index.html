@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova — G'oyadan tayyor dizaynga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="8" stroke="currentColor" stroke-width="2"/><path d="M9 18 L14 9 L19 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Nova</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#imkoniyatlar">Imkoniyatlar</a>
+        <a href="#qanday">Qanday ishlaydi</a>
+        <a href="#narx">Narxlar</a>
+        <a href="#aloqa">Aloqa</a>
+        <div class="nav__actions" id="guestActions">
+          <button type="button" class="btn btn--ghost" data-open-login>Kirish</button>
+          <button type="button" class="btn btn--accent" data-open-login>Boshlash</button>
+        </div>
+      </nav>
+
+      <div class="user" id="userBox" hidden>
+        <button type="button" class="user__btn" id="userBtn" aria-label="Profil menyusi" aria-expanded="false" aria-controls="userMenu">
+          <img class="user__avatar" id="userAvatar" alt="" referrerpolicy="no-referrer">
+        </button>
+        <div class="user__menu" id="userMenu" hidden>
+          <div class="user__card">
+            <img class="user__avatar user__avatar--lg" id="userMenuAvatar" alt="" referrerpolicy="no-referrer">
+            <div class="user__info">
+              <span class="user__name" id="userName"></span>
+              <span class="user__email" id="userEmail"></span>
+            </div>
+          </div>
+          <button type="button" class="btn btn--outline" id="logoutBtn">Chiqish</button>
+        </div>
+      </div>
+
+      <button type="button" class="menu-btn" id="menuBtn" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="nav">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="badge reveal"><span class="dot"></span>Yangi versiya chiqdi</span>
+        <h1 class="hero__title reveal">G'oyadan tayyor dizaynga — bir necha soniyada</h1>
+        <p class="hero__text reveal">Matn bilan yozing, sun'iy intellekt sahifa, ilova ekrani yoki landing dizaynini o'zi yaratib beradi.</p>
+        <div class="hero__buttons reveal">
+          <button type="button" class="btn btn--accent btn--lg" data-open-login>Sinab ko'rish</button>
+          <a href="#qanday" class="btn btn--outline btn--lg">Qanday ishlaydi</a>
+        </div>
+
+        <div class="window reveal">
+          <div class="window__dots"><span></span><span></span><span></span></div>
+          <div class="window__grid">
+            <div class="panel panel--lines">
+              <div class="line" style="width:60%"></div>
+              <div class="line" style="width:85%"></div>
+              <div class="line" style="width:40%"></div>
+              <div class="panel__btn"></div>
+            </div>
+            <div class="panel panel--placeholder">[DIZAYN PREVYU RASMI]</div>
+            <div class="panel panel--blocks"><div></div><div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="imkoniyatlar" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Imkoniyatlar</span>
+          <h2 class="section__title">Dizayn uchun kerak bo'lgan hamma narsa</h2>
+        </div>
+        <div class="features">
+          <article class="card reveal">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5z"/></svg>
+            <h3>Matndan dizayn</h3>
+            <p>Nima kerakligini oddiy so'z bilan yozing — tayyor ekranlar hosil bo'ladi.</p>
+          </article>
+          <article class="card reveal">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+            <h3>Web va mobil</h3>
+            <p>Bitta g'oyadan ham kompyuter, ham telefon uchun moslashgan ko'rinish.</p>
+          </article>
+          <article class="card reveal">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>
+            <h3>Kodga eksport</h3>
+            <p>Tayyor dizaynni HTML va CSS sifatida yuklab oling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="qanday" class="section">
+      <div class="container steps-wrap">
+        <div class="section__head reveal">
+          <span class="eyebrow">Qanday ishlaydi</span>
+          <h2 class="section__title">Uch qadamda tayyor</h2>
+          <p class="section__text">Murakkab dasturlarsiz, kod bilmasdan.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <div><strong>G'oyani yozing</strong><span>Qanday sahifa kerakligini tasvirlang.</span></div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <div><strong>AI yaratadi</strong><span>Bir necha variant soniyalarda tayyor bo'ladi.</span></div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <div><strong>Tahrirlang va eksport qiling</strong><span>O'zgartiring, keyin kodni yuklab oling.</span></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="narx" class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 class="cta__title">Birinchi dizayningizni bugun yarating</h2>
+          <p class="cta__text">Narx: [NARXINGIZ]</p>
+          <a href="#" class="btn btn--accent btn--lg">Hoziroq boshlash</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="aloqa" class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">Nova</span>
+          <span>AI yordamida dizayn yaratish platformasi.</span>
+        </div>
+        <nav aria-label="Mahsulot" class="footer__col">
+          <strong>Mahsulot</strong>
+          <a href="#imkoniyatlar">Imkoniyatlar</a>
+          <a href="#narx">Narxlar</a>
+          <a href="#qanday">Qo'llanma</a>
+        </nav>
+        <nav aria-label="Kompaniya" class="footer__col">
+          <strong>Kompaniya</strong>
+          <a href="#">Biz haqimizda</a>
+          <a href="#">Blog</a>
+          <a href="#">Aloqa</a>
+        </nav>
+        <nav aria-label="Ijtimoiy tarmoqlar" class="footer__col">
+          <strong>Ijtimoiy</strong>
+          <a href="#">Telegram</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Nova. Barcha huquqlar himoyalangan.</span>
+        <span>[EMAIL MANZILINGIZ]</span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="loginDialog" aria-labelledby="loginTitle">
+    <button type="button" class="modal__close" id="loginClose" aria-label="Oynani yopish">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <svg class="modal__logo" width="40" height="40" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="8" stroke="currentColor" stroke-width="2"/><path d="M9 18 L14 9 L19 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h2 class="modal__title" id="loginTitle">Hisobingizga kiring</h2>
+    <p class="modal__text">Davom etish uchun Google akkauntingizni tanlang.</p>
+    <div class="modal__google" id="googleBtn"></div>
+    <p class="modal__note" id="loginNote" hidden></p>
+    <p class="modal__terms">Kirish orqali siz foydalanish shartlariga rozilik bildirasiz.</p>
+  </dialog>
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
